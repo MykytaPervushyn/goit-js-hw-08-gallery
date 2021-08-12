@@ -103,7 +103,7 @@ function createGalleryItemsMarkup(items) {
 function onGalleryContainerClick(e) {
 
   window.addEventListener('keydown', onEscKeyPress, { once: true })
-  window.addEventListener('keydown', onArrowKeyPress, { once: true })
+  // window.addEventListener('keydown', onArrowKeyPress, { once: true })
   closeLightboxBtn.addEventListener('click', onCloseLightbox, { once: true });
 
   e.preventDefault()
@@ -141,6 +141,7 @@ function onEscKeyPress(e) {
     onCloseLightbox(e)
   }
 }
+
 
 
 
